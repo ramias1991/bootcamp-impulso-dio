@@ -1,0 +1,288 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+ul li a {
+   text-decoration: none;
+}
+
+.flex-container {
+   display: flex;
+   max-width: 992px;
+   margin: auto;
+   width: 100%;
+   min-width: 320px;
+   padding: 10px 15px;
+}
+
+header {
+   background-color: #122A57;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   color: #fff;
+}
+
+header .list-items {
+   display: flex;
+   width: 100%;
+   max-width: 260px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.list-items li a {
+   color: #FFF;
+}
+
+div img {
+   display: block;
+   width: 100%;
+}
+
+header .menu {
+   justify-content: space-between;
+}
+
+.apresentation {
+   height: 100vh;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.apresentation .text-apresentation {
+   min-height: 200px;
+   width: 100%;
+}
+
+.text-apresentation h1{
+   color: #122A57;
+   font-size: 48px;
+   margin-bottom: 10px;
+}
+
+.btn {
+   background-color: #122A57;
+   color: #fff;
+   text-align: center;
+   border-radius: 30px;
+   width: 220px;
+   display: block;
+   text-decoration: none;
+   height: 50px;
+   line-height: 50px;
+   margin: 10px 0;
+}
+
+#who-are-we {
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#who-are-we h2 {
+   font-size: 32px;
+   color: #122A57;
+   display: flex;
+   margin-bottom: 20px;
+}
+
+#who-are-we h2::before {
+   content: "";
+   height: 50px;
+   width: 5px;
+   margin-right: 5px;
+   background-color: #122A57;
+   position: relative;
+}
+
+#who-are-we p {
+   margin-bottom: 10px;
+   width: 90%;
+}
+
+#who-are-we img {
+   min-width: 420px;
+}
+
+.container-extern {
+   background-color: #122A57;
+   width: 100%;
+}
+
+#services {
+   flex-direction: column;
+   padding: 50px 0 100px 0;
+}
+
+#services h2 {
+   color: #fff;
+   font-size: 32px;
+   margin-bottom: 20px;
+}
+
+.list-services {
+   display: flex;
+   justify-content: space-between;
+}
+
+.list-services .item-service {
+   text-align: center;
+}
+
+.item-service a {
+   width: 120pc;
+   background-color: #FFF;
+   border-radius: 30px;
+   height: 50px;
+   text-align: center;
+   margin-top: 20px;
+   line-height: 50px;
+   padding: 5px 10px;
+   color: #122A57;
+   font-size: 12px;
+   text-decoration: none;
+   font-weight: 700;
+}
+
+.item-service p {
+   font-weight: 700;
+   font-size: 18px;
+   color: #FFF;
+   margin: 25px 0;
+}
+
+.item-service img {
+   width: 80%;
+   margin: auto;
+}
+
+#planes {
+   flex-direction: column;
+   min-height: 100vh;
+   padding-top: 50px;
+}
+
+#planes h2 {
+   font-size: 32px;
+}
+
+.list-planes {
+   display: flex;
+   align-items: flex-end;
+}
+
+.item-plane {
+   flex: 1;
+   border: 2px solid #122A57;
+   margin-right: 20px;
+   padding: 10px;
+}
+
+.item-plane .btn {
+   margin: auto;
+   margin-bottom: 20px;
+}
+
+.item-plane h3 {
+   font-size: 24px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin-top: 20px;
+}
+
+.item-plane h3::after {
+   content: "";
+   background-color: #122A57;
+   width: 100%;
+   height: 3px;
+   margin: 20px 0 10px 0;
+}
+
+.item-plane ul {
+   padding: 10px 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+.item-plane ul li {
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   padding: 10px 0;
+}
+
+.item-plane ul li::before {
+   content: "";
+   width: 10px;
+   height: 10px;
+   background-color: #122A57;
+   margin-right: 5px;
+}
+
+footer {
+   background-color: #122A57;
+   height: 70px;
+   display: flex;
+}
+
+footer .footer {
+   justify-content: space-between;
+   color: #fff;
+}
+
+/* mobile */
+
+@media(max-width:992px) {
+   .flex-container {
+      flex-direction: column;
+   }
+
+   .apresentation {
+      flex-direction: column-reverse;
+   }
+
+   .apresentation .text-apresentation {
+      width: 100%;
+   }
+
+   #who-are-we {
+      flex-direction: column-reverse;
+   }
+
+   #who-are-we img {
+      min-width: 320px;
+      margin: auto;
+   }
+
+   .list-services {
+      flex-direction: column;
+   }
+
+   .item-service img {
+      width: 50%;
+      margin: auto;
+   }
+
+   .list-planes {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+   }
+
+   .list-planes .item-plane {
+      max-width: 90%;
+      margin: auto;
+      width: 100%;
+      margin-bottom: 20px;
+   }
+}
